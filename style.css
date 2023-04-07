@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'circular';
+    src: url(font/Circular/CircularStd-Medium.otf) format('opentype')
+}
+
+:root {
+    --cor0: #1d75de;
+    --cor1: #000;
+    --cor2: #191414;
+    --cor3: #E9D4DD;
+
+    --font-padrao: Verdana;
+}
+
+* {
+    font-family: var(--font-padrao);
+}
