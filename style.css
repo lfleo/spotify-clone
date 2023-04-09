@@ -1,17 +1,105 @@
-@font-face {
-    font-family: 'circular';
-    src: url(font/Circular/CircularStd-Medium.otf) format('opentype')
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --cor0: #1d75de;
     --cor1: #000;
     --cor2: #191414;
     --cor3: #E9D4DD;
-
-    --font-padrao: Verdana;
+    --cor4: #EFEFEF;
+    --cor5: #1ED760;
 }
 
 * {
-    font-family: var(--font-padrao);
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: gray;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 100px;
+    height: 85px;
+
+}
+
+header > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+header > ul > li {
+    margin: 0px 13px;
+}
+
+header > ul > li:hover {
+    color: var(--cor5);
+    cursor: pointer;
+}
+
+img {
+    width: 125px;
+    height: fit-content;
+}
+
+.section1 {
+    background-color: var(--cor0);
+    color: #fff;
+    padding: 0px 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 85px 0 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 24px;
+    padding: 30px 0 0;
+}
+
+.btn {
+    padding: 40px 0 0;
+}
+
+button {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--cor2);
+    padding: 13px 30px;
+    border-radius: 40px;
+    border: 2px solid var(--cor2);
+    cursor: pointer;
+}
+
+button:first-child:hover {
+    background-color: #000;
+}
+
+.btn-alt {
+    background-color: var(--cor0);
+    border: 2px solid #fff;
+    margin: 0 100px;
+}
+
+.btn-alt:hover {
+    background-color: #1b6ccf;
+}
+
+.section1 > p {
+    font-size: 11px;
+    padding: 40px 0 35px;
 }
